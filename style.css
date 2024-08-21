@@ -1,3 +1,5 @@
+@import url(./animation.css);
+
 *{
     margin: 0%;
     padding: 0%;
@@ -34,13 +36,16 @@ nav{
 }
 .nav-links a{
     /* border: 1px solid white; */
+    text-align: center;
+    width: 80px;
+    height: 30px;
     padding: 4px;
     color: white;
     text-decoration: none;
     font-size: larger;
 }
 .nav-links a:hover{
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
     transition: none;
     scroll-behavior:auto;
 }
@@ -54,16 +59,17 @@ nav{
     width: 40%;
     height: 100%;
     /* text-align: center; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
 
 }
 .content{
-    width: 500px;
+    width: 100%;
     height: fit-content;
     /* border: 1px solid white; */
-    margin-top: 30%;
+    /* margin-top: 30%; */
     /* margin-left: 15%; */
     color: white;
     text-align: center;
@@ -72,12 +78,14 @@ nav{
 .content h1{
     font-size: 60px;
     letter-spacing: 1px;
+    animation-delay: 1s;
 }
 
 .content p{
     margin-top: 10px;
     font-size: large;
     letter-spacing: 2px;
+    animation-delay: 1.5s;
 }
 .content button{
     /* padding: 20px; */
@@ -91,6 +99,7 @@ nav{
     color: white;
     font-size: larger;
     letter-spacing: 1.5px;
+    animation-delay: 2s;
 }
 .content button:hover{
     background-color: #b66e37;
@@ -101,8 +110,22 @@ nav{
     height: 100%;
 }
 
-@media(max-width:950px){
-    .content{
-        width: 300px;
+@media(max-width:725px){
+    
+    .content h1{
+        font-size: 40px;
     }
+    .content p{
+        font-size: small;
+        /* line-height: 20px; */
+    }
+}
+.coffee-section{
+    margin-top: 20px;
+}
+.coffee-bg{
+    width: 350px;
+    height: 250px;
+    border: 1px solid rgb(230, 220, 220);
+    background:#101720;
 }

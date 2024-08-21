@@ -1,0 +1,26 @@
+
+.content-animate {
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: move .5s ease-out forwards;
+   
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.img-animate{
+    transform: translateX(100px);
+    opacity: 0;
+    animation: Imgmove 1s ease-out forwards;
+}
+@keyframes Imgmove {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
