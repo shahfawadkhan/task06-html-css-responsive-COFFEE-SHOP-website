@@ -110,16 +110,75 @@ nav{
     height: 100%;
 }
 
-@media(max-width:725px){
-    
-    .content h1{
-        font-size: 40px;
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .content p{
-        font-size: small;
-        /* line-height: 20px; */
+
+    .hero-section-content {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hero-section-image {
+        width: 80%;
+        height: auto;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .content p {
+        font-size: medium;
+    }
+
+    .content button {
+        width: 140px;
+        height: 35px;
+        font-size: medium;
     }
 }
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .hero-section {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section-content {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hero-section-image {
+        width: 90%;
+        height: auto;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: small;
+    }
+
+    .content button {
+        width: 120px;
+        height: 30px;
+        font-size: small;
+    }
+}
+
 .coffee-section{
     margin-top: 20px;
 }
