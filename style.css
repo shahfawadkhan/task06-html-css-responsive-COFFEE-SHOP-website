@@ -10,7 +10,7 @@
 body{
    /* background-color: #101720; */
    /* background-color: #020D19; */
-   background-color: #000000;
+   background-color: #0C0C0C;
    height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@ nav{
 }
 .coffee-bg {
     width: 300px;
-    height: 252px;
+    height: 260px;
     background: #101720;
     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/back4.jpg'); */
     background-size: cover;
@@ -217,14 +217,14 @@ nav{
     background: none;
 }
 .coffee-bg:hover{
-    /* background-color: aliceblue; */
-    background-color: #b66e37;
+    background-color:paleturquoise;
+    /* background-color: #b66e37; */
     color: #000000;
     
 }
 .coffee-bg  div{
     position: relative;
-    top: 10px;
+    top: 0px;
 }
 .coffee-bg:hover div{
     background-color: #101720;
