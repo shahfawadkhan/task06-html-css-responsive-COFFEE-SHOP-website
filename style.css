@@ -1,43 +1,42 @@
 @import url(./animation.css);
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: .5s;
 }
-body{
-   /* background-color: #101720; */
-   /* background-color: #020D19; */
-   background-color: #010103;
-   height: 100vh;
+
+body {
+    background-color: #010103;
+    height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-nav{
+
+nav {
     width: 100%;
     height: 100px;
-    border-bottom: 0.5px solid rgba(245, 245, 245, 0.276);
-    /* box-shadow: 0px .5px 10px white; */
     display: flex;
     justify-content: space-around;
-    background-color: black;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     width: 80px;
     height: 100px;
 }
-.nav-links{
+
+.nav-links {
     width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.nav-links a{
-    /* border: 1px solid white; */
+
+.nav-links a {
     text-align: center;
     width: 70px;
     height: 30px;
@@ -46,51 +45,48 @@ nav{
     text-decoration: none;
     font-size: larger;
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
     border-bottom: 2px solid whitesmoke;
     transition: none;
-    scroll-behavior:auto;
+    scroll-behavior: auto;
 }
+
 .hero-section {
     width: 100%;
     height: 480px;
     display: flex;
     justify-content: space-around;
 }
-.hero-section-content{
+
+.hero-section-content {
     width: 40%;
     height: 100%;
-    /* text-align: center; */
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
     align-items: center;
-
 }
-.content{
+
+.content {
     width: 100%;
     height: fit-content;
-    /* border: 1px solid white; */
-    /* margin-top: 30%; */
-    /* margin-left: 15%; */
     color: white;
     text-align: center;
-    /* line-height: 60px; */
 }
-.content h1{
+
+.content h1 {
     font-size: 60px;
     letter-spacing: 1px;
     animation-delay: 1s;
 }
 
-.content p{
+.content p {
     margin-top: 10px;
     font-size: large;
     letter-spacing: 2px;
     animation-delay: 1.5s;
 }
-.content button{
-    /* padding: 20px; */
+
+.content button {
     width: 160px;
     height: 40px;
     margin-top: 15px;
@@ -103,11 +99,13 @@ nav{
     letter-spacing: 1.5px;
     animation-delay: 2s;
 }
-.content button:hover{
-    background-color: chocolate;
+
+.content button:hover {
+    background-color: #D2691E;
     color: white;
 }
-.hero-section-image{
+
+.hero-section-image {
     width: 40%;
     height: 100%;
 }
@@ -146,7 +144,6 @@ nav{
     }
 }
 
-/* For mobile screens */
 @media (max-width: 480px) {
     .hero-section {
         height: auto;
@@ -180,20 +177,18 @@ nav{
         font-size: small;
     }
 }
-#coffee-section-name{
-    color:white;
+
+#coffee-section-name {
+    color: #4B3621;
     width: 50%;
     margin: 0% auto;
-    margin-top: 30px;
+    margin-top: 80px;
     border-top-left-radius: 340px;
     border-bottom-left-radius: 340px;
     text-align: center;
-    /* background-color: #b66e37; */
-    background-color:chocolate;
 }
-.coffee-section{
-   
-    /* border: 1px solid white; */
+
+.coffee-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -203,70 +198,69 @@ nav{
     height: fit-content;
     margin-top: 50px;
 }
+
 .coffee-bg {
     width: 300px;
     height: 260px;
     background: #101720;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/back4.jpg'); */
     background-size: cover;
     text-align: center;
     color: white;
     border-radius: 10px;
     margin-top: 10px;
-    
 }
 
 .coffee-bg img {
     position: relative;
-    top: 0; 
-    transition: top 1s ease; 
+    top: 0;
+    transition: top 1s ease;
 }
-
 
 .coffee-bg:hover img {
-    top: -50px; 
+    top: -50px;
     background: none;
 }
-.coffee-bg:hover{
-    /* background-color:rgb(231, 236, 240); */
-    /* background-color:chocolate; */
+
+.coffee-bg:hover {
     background-color: aliceblue;
     color: #000000;
-    
 }
-.coffee-bg  div{
+
+.coffee-bg div {
     position: relative;
     top: 0px;
 }
-.coffee-bg:hover div{
+
+.coffee-bg:hover div {
     background-color: #101720;
     color: white;
     top: -20px;
 }
-.image-text{
+
+.image-text {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: space-around;
-    /* gap: 20px; */
     margin-top: 40px;
     align-items: center;
 }
-.image-text img-div{
+
+.image-text img-div {
     width: 40%;
     height: 100%;
 }
-.image-text p{
+
+.image-text p {
     width: 60%;
     height: fit-content;
     color: chocolate;
-    border: 1px solid white;
+    text-transform: capitalize;
     padding: 10px;
     font-size: 25px;
-    /* background-color: white; */
 }
 
-.cold-coffee-section{
+.cold-coffee-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -275,80 +269,96 @@ nav{
     margin: 0% auto;
     height: fit-content;
     margin-top: 50px;
-    border: 1px solid white;
 }
-.cold-coffee-cup{
-    width: 270px;
+
+.cold-coffee-cup {
+    width: 250px;
     height: 250px;
-    background: rgba(255, 255, 255, .3);
-    /* background-color: aliceblue; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/back4.jpg'); */
+    background-color: #101720;
     background-size: cover;
     text-align: center;
-    color: white;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     margin-top: 10px;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 3px solid aliceblue;
-}
-.coffee-cup-name{
-    background-color: aliceblue;
-    width: 100%;
-    height: 40px;
-    color: black;
-}
-.cold-coffee-cup:hover{
-    transform: translateY(-15px);
-    
-}
-.beans-section{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: fit-content;
-    margin-top: 100px;
-}
-.beans-box{
-    width: 230px;
-    height: fit-content;
-    background-color: #101720;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.beans-box >img{
-    /* border: 1px solid crimson; */
-    position: relative;
-    top: 0px;
-    /* margin-top: -50px; */
+.coffee-cup-name {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.beans-box p{
+
+.cold-coffee-cup:hover {
+    transform: translateY(-15px);
+}
+.cold-coffee-cup:hover  .coffee-cup-name{
+    background-color: aliceblue;
+    color: black;
+}
+.beans-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+}
+
+.beans-box {
+    width: 230px;
+    height: 270px;
+    border-radius: 10px;
+    background-color: #101720;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beans-box > img {
+    position: relative;
+    top: -40px;
+}
+
+.beans-box p {
     text-align: center;
     font-size: larger;
     position: relative;
     font-weight: 300;
     width: 100%;
-    top: 0px;
-    transition: top 1s ease;
     color: chocolate;
+    margin-top: -15px;
 }
-.beans-box:hover{
-    background-color: aliceblue;
+
+.beans-box:hover {
+    transform: scale(1.08);
 }
-.beans-box:hover p{
-    top: -20px;
-    line-height: 30px;
+
+.beans-box:hover p {
     color: white;
-    background-color: #101720;
-    
-  
 }
-.beans-box:hover img{
-    top: -40px;
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(25, 23, 22);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.contact {}
+
+.contact .fa-brands {
+    font-size: 2rem;
 }
