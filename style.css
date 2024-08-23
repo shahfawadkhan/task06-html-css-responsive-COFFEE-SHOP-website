@@ -305,3 +305,28 @@ nav{
     transform: translateY(-15px);
     
 }
+.beans-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+}
+.beans-box{
+    width: 250px;
+    height: 300px;
+    background-color: azure;
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.beans-box >img{
+    /* border: 1px solid crimson; */
+    position: relative;
+    top: 0px;
+    /* margin-top: -50px; */
+}
+.beans-box p{
+    text-align: center;
+}
