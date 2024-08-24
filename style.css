@@ -6,6 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: .5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -328,7 +329,7 @@ body {
 footer {
     margin-top: 50px;
     width: 100%;
-    height: fit-content;
+    height: 100px;
     background-color:#101720;
     display: flex;
     flex-wrap: wrap;
@@ -338,12 +339,12 @@ footer {
     gap: 20px;
 }
 .footer-container1{
-    width: 500px;
+    width: 400px;
     display: flex;
     justify-content: space-around; 
 }
 .footer-container2{
-    width: 500px;
+    width: 400px;
     display: flex;
     justify-content: space-around;
 }
@@ -352,7 +353,15 @@ footer {
     font-size: 1.7rem;
     margin-top: 10px;
 }
-
+@media(max-width:800px){
+    footer{
+        height: 200px;
+    }
+    .footer-container1,.footer-container2{
+        width:100%;
+        justify-content: space-evenly;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -395,6 +404,7 @@ footer {
         padding: 40px;
         font-size: 17px;
     }
+    
 }
 
 @media (max-width: 480px) {
